@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  shop:
+    build:
+      dockerfile: ./php.Dockerfile
+      context: .
+    volumes:
+      - ../.:/var/www/html:cached
+    ports:
+      - 80:80
+      - 443:443
+
+  db:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=test
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql_presta:/var/lib/mysql
+volumes:
+  mysql_presta:

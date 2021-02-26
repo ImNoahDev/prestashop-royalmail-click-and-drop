@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>royalmailclickanddrop</name>
+	<displayName><![CDATA[RoyalMail Click & Drop]]></displayName>
+	<version><![CDATA[0.0.1]]></version>
+	<description><![CDATA[Integrates orders with the RoyalMail Click & Drop API]]></description>
+	<author><![CDATA[Delota]]></author>
+	<tab><![CDATA[shipping_logistics]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>
